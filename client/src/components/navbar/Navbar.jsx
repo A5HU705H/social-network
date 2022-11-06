@@ -19,7 +19,7 @@ const Navbar = () => {
   const { currentUser } = useContext(AuthContext);
   const handleClick = async (e) =>{
     try{
-      await axios.post("http://localhost:8801/api/auth/logout", null); 
+      await axios.post("http://localhost:8802/api/auth/logout", null); 
     }
     catch (err){
       console.log('bheroor')
